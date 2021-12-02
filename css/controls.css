@@ -6,7 +6,14 @@
  * Instead, add your own CSS in the index.css
  *************************************************************************/
 
-.custom-image-button {
+.img-Class{
+  width: 300px;
+  border: 25px solid rgb(235, 207, 156);
+  padding: 25px;
+  margin: 25px;
+
+}
+ .custom-image-button {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
