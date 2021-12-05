@@ -10,25 +10,72 @@
   width: 240px;
 }
 
-#dialog-1,
-#dialog-2,
-#dialog-3,
-#dialog-4,
-#share-dialog {
-  display: none;
+
+div.gallery {
+ border: 1px solid rgb(255, 131, 94);
+ width: 130px;
+ float:left;
+ margin-left: 1%;
+ position:static;
+   }
+
+div.gallery:hover {
+ border: 1px solid rgb(255, 201, 120);
+ background-color: rgb(255, 244, 195);
 }
 
-#share-url {
-  width: 100%;
-  -webkit-touch-callout: default !important;
-  -webkit-user-select: text !important;
-  -khtml-user-select: text !important;
-  -moz-user-select: text !important;
-  -ms-user-select: text !important;
-  user-select: text !important;
+div.desc {
+color: chocolate;
+text-align: center;
+margin-left: 25%;
+}
+div.desc-2 {
+color: chocolate;
+text-align: center;
+margin-left: 32%;
+}
+div.PP {
+margin-left: 20%;
+margin-top: 5%;
 }
 
-#share-url-copy-prompt {
-  display: none;
-  color: #007bff;
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #ff880091;
+}
+
+li {
+float: left;
+}
+
+li a {
+display: block;
+color: #ffffffe8;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover:not(.active) {
+background-color: #7a4100;
+}
+
+li a.active {
+color: white;
+background-color: #472000;
+}
+
+div.backimg {
+  background-image: url("../new-project/img/outside.jpg");
+  height: 506px;
+  width: 1550px;
+  opacity: 0.5;
+  background-repeat: no-repeat;
+   }
+h1.first {
+  text-align: center;
 }
