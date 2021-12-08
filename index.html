@@ -7,6 +7,7 @@
   <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="css/custom.css" media="screen" rel="stylesheet" />
+  <link href="css/Save.java" media="screen" rel="stylesheet" />
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
@@ -14,7 +15,7 @@
   <script src="js/menu.js"></script>
   <link rel= "Background" href="img/Background.jpg">
   <link rel= "outside" href="img/outside.jpg">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
@@ -37,47 +38,55 @@
   }
   div.backback {
     background-image: url("../new-project/img/outside.jpg");
+    height: 200px;
+    background-size:cover;
+    margin:auto;
+    width:50%;
+
   }
  </style>
 
   <body>
+    <div class="overlay" id="overlay1" onclick="off1()">
+      <div id="text">Overlay Text1</div>
+    </div>
+    <div class="overlay" id="overlay2" onclick="off2()">
+      <div id="text">Overlay Text2</div>
+    </div>   
+    <script>
+    function on1() {
+      document.getElementById("overlay1").style.display = "block";
+    }
+    function on2() {
+      document.getElementById("overlay2").style.display = "block";
+    }    
+    function off1() {
+      document.getElementById("overlay1").style.display = "none";
+    }
+    function off2() {
+      document.getElementById("overlay2").style.display = "none";
+    }
+    
+    </script>
+
+    <div class= "backback">
     <h1 class="first">台灣經典傳統糕餅</h1>
-  </body>
-
-
-  <body>
+    </div>
   <div class= "PP">
-  <div class="gallery">
-    <img src="img\ananas.png" alt="ananas" height="100" width="100">
-    <div class="desc"><b>鳳梨酥<b></div>
-  </div>
-
-  <div class="gallery">
-    <img src="img\Bigpie.png" alt="ananas" height="100" width="100">
-    <div class="desc-2"><b>大餅<b></div>
-  </div>
-
-  <div class="gallery">
-    <img src="img\Cube.png" alt="ananas" height="100" width="100">
-    <div class="desc"><b>方塊酥<b></div>
-  </div>
-
-  <div class="gallery">
-    <img src="img\Dog.png" alt="ananas" height="100" width="100">
-    <div class="desc"><b>打狗餅<b></div>
-
-  </div>
-
-  <div class="gallery">
-    <img src="img\Scallion.png" alt="ananas" height="100" width="100">
-    <div class="desc"><b>蔥燒餅<b></div>
-  </div>
-
-  <div class="gallery">
-    <img src="img\Taro.png" alt="ananas" height="100" width="100">
-    <div class="desc"><b>芋頭酥<b></div>
-  
-
+      <body>
+      <button class="button button1" onclick="on1()"><img src="img/ananas.png" width="110" height="110"><br/>
+        <b>鳳梨酥</b></button>
+      <button class="button button1" onclick="on2()"><img src="img/Taro.png" width="110" height="110"><br/>
+        <b>芋頭酥</b></button>
+      <button class="button button1" onclick="on1()"><img src="img/BigPie.png" width="110" height="110"><br/>
+        <b>大餅</b></button>
+      <button class="button button1" onclick="on2()"><img src="img/Cube.png" width="110" height="110"><br/>
+        <b>方塊酥</b></button>
+      <button class="button button1" onclick="on2()"><img src="img/Dog.png" width="110" height="110"><br/>
+        <b>打狗餅</b></button>
+      <button class="button button1" onclick="on1()"><img src="img/Scallion.png" width="110" height="110"><br/>
+        <b>蔥燒餅</b></button>
+    </div>
   </body>
 
 </html>
